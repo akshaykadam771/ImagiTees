@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+#header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./war3.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+:root {
+  --main-color: #e6b30e;
+}
+.act,
+.navbar ul li a:hover {
+  color: var(--main-color) !important;
+  border-bottom: 1px solid var(--main-color);
+}
+.theme-text {
+  color: var(--main-color) !important;
+}
+
+svg.wave {
+  position: absolute;
+  bottom: -70px;
+}
+.middle {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 90vh;
+  width: 70%;
+}
+.middle h1 {
+  font-size: 70px;
+}
+
+
+.next-button-wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 9999;
+  bottom:90px;
+}
+.button-89 {
+  --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: #373B44;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-89:hover,
+.button-89:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.button-89:active {
+  background: var(--color);
+  color: #fff;
+}

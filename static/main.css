@@ -1,0 +1,149 @@
+* {
+  font-family: "Kanit", sans-serif;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+a,
+main {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #E3DFDF;
+}
+
+.cards-section {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 150px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards > .card {
+  width: 270px;
+  height: 290px;
+  background-color: #4c5871;
+  border-radius: 15px;
+}
+
+.cards {
+  gap: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bottom-colors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  margin-top: 5px;
+}
+
+.bottom-name {
+  padding: 0 40px;
+}
+
+.bottom-name > p {
+  font-weight: 400;
+  font-size: 20px;
+  color: rgb(239 45 45);
+}
+
+.bottom-price {
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-price > span {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(8 8 8);
+}
+
+.bottom-price > span:last-child {
+  cursor: pointer;
+}
+
+.card > .card__bottom {
+  width: 100%;
+  height: 130px;
+  background-color: white;
+  border-radius: 15px;
+
+  position: absolute;
+  bottom: -1px;
+}
+
+.cards > .card {
+  position: relative;
+  margin-top: 80px;
+   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+ 
+.card__top > img {
+  width: 270px;
+  height: 215px;
+  position: absolute;
+
+  left: 0;
+  right: 0;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  bottom: 120px;
+  z-index: 2;
+}
+
+.card__bottom {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+  transition: all 200ms ease-in-out;
+}
+
+.card:hover > .card__bottom {
+  bottom: 2px;
+}
+.title {
+  text-align: center;
+  width: 50%;
+  font-size: 40px;
+  font-weight: 400;
+  position: relative;
+  top: 45px;
+  
+  border-radius: 8px;
+  margin: auto;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.select-button {
+  background: #3184ea;
+  border: .5px solid rgba(0,0,0,0.12);
+  font-size: 18px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin: auto;
+  color: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+

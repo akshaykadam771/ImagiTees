@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customize Product</title>
+
+    <link rel="stylesheet" href="./static/main.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="cards-section" style="padding-top: 0px;">
+      <div class="cards">
+        <div class="card" style="width: 400px;height: 360px;">
+          <div class="card__top">
+            <img src="./static/white_512_512.png" alt="w1" style="width: 400px;height: 241px" />
+          </div>
+          <div class="card__bottom">
+            <div class="bottom-colors">
+              <svg height="13" width="13">
+                <circle cx="6.5" cy="6.5" r="6.5" fill="#1e2a44" />
+              </svg>
+              <svg height="13" width="13">
+                <circle cx="6.5" cy="6.5" r="6.5" fill="#1e2a44" />
+              </svg>
+              <svg height="13" width="13">
+                <circle cx="6.5" cy="6.5" r="6.5" fill="#1e2a44" />
+              </svg>
+            </div>
+
+            <div class="bottom-name" style="text-align: center;">
+              <p>White T-Shirt Series</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div style="display: flex;justify-content: center; width: 100%; margin-top: 20px; flex-direction: column; align-items: center;">
+        <div class="bottom-price" style="margin-top: 20px;">
+        <form action="/generate_white_tshirt" method="POST">
+          <textarea name= "text_to_generate" style="width: 400px"></textarea>
+          <button class="select-button">Generate</button>
+        </form>
+       </div>
+    </div>
+  </body>
+</html>
